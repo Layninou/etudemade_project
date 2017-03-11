@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+
+    <title>Etu'made - Oser créer</title>
+  </head>
+  <body ng-app="etumade" ng-strict-di>
+
+    <header>
+  		<nav id="header-nav" class="navbar navbar-default">
+  			<div class="container">
+  				<div class="navbar-header">
+  					<a class="pull-left visible-md visible-lg">
+  						<div id="logo-navbar" alt="Etu'Made"></div>
+  					</a>
+
+            <div class="navbar-brand">
+              <a><h1>Etu'Made</h1></a>
+              <p></p>
+            </div>
+
+
+
+  					<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+  			            <span class="sr-only">Toggle navigation</span>
+  			            <span class="icon-bar"></span>
+  			            <span class="icon-bar"></span>
+  			            <span class="icon-bar"></span>
+  			        </button>
+            		</div><!-- END navbar-header -->
+
+  		        <div id="collapsable-nav" class="collapse navbar-collapse">
+  		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+  		            <li id="navLogButton">
+  		              <a>SE CONNECTER</a>
+  		            </li>
+  		            <li id="navProjectsButton">
+  		              <a>PROJETS</a>
+  		            </li>
+  		            <li id="navSearchButton">
+  		              <a>RECHERCHE</a>
+  		            </li>
+  		            <li>
+  		              <a id="navFAQButton">FAQ</a>
+  		            </li>
+  		          </ul><!-- #nav-list -->
+  		        </div><!-- .collapse .navbar-collapse -->
+
+
+  			</div><!-- END container-->
+  		</nav><!-- END header-nav -->
+  	</header>
+
+
+    <!-- the place where the magic happen with AngularJS -->
+  	<ui-view></ui-view>
+
+
+
+  </body>
+
+  <!-- Libraries -->
+  <script src="lib/jquery-2.1.4.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <!-- Google Map API -->
+  <script src="https://maps.google.com/maps/api/js?key=AIzaSyACcdBI_n63I0Z9LkX28my8NnbVY8482Os"></script>
+  <!-- Firebase -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0/angular.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script src="https://cdn.firebase.com/libs/angularfire/2.2.0/angularfire.js"></script>
+  <!-- Routes -->
+  <script src="lib/angular-ui-router.min.js"></script>
+
+  <!-- Main Modules -->
+  <script src="js/etumade.module.js"></script>
+
+  <!-- Public Modules -->
+  <script src="js/public/public.module.js"></script>
+	<script src="js/public/public.routes.js"></script>
+
+</html>

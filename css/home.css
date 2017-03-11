@@ -1,0 +1,65 @@
+
+/******* Right Spans for large screen ******/
+#right-spans{
+  margin-top: 15vh;
+  margin-right: 20vw;
+  margin-bottom: 15vh;
+}
+
+#right-spans span{
+  color: #337ab7;
+  font-size: 3rem;
+}
+
+@media (min-width: 990px) and (max-width: 1070px){
+  #right-spans{
+    display: none!important;
+  }
+}
+
+/******* Button and Image in the center ******/
+#button-home{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.button-div{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.button-div button{
+  width: 30vw;
+  height: 7vh;
+}
+
+#project-btn-add{
+  background-color: #337ab7;
+  border-color: #337ab7;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #303030;
+}
+
+#team-button{
+  background-color: #DDDDDD;
+  border-color: #DDDDDD;
+  border-radius: 5px;
+  font-size: 2rem;
+  color: #AAAAAA;
+}
+
+#project-btn-add:hover{
+  box-shadow: 2px 2px 2px 2px #5c65bb;
+}
+
+#team-button:hover{
+  box-shadow: 2px 2px 2px 2px #303030;
+}
+
+@media (max-width: 1070px){
+  .button-div button{
+    width: 50vw;
+    height: 10vh;
+  }
+}
