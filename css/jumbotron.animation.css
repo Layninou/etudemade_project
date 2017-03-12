@@ -1,0 +1,13 @@
+.spotlith{
+  animation: apparition-from-bottom 1s ease-out;
+}
+
+@keyframes apparition-from-bottom {
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+  }
+}

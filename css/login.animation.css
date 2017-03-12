@@ -1,0 +1,28 @@
+#login{
+  display: none;
+  background: #e7e7e7;
+}
+
+#navLogButton:hover > #login{
+  display: block;
+}
+
+#login{
+  display: none;
+  text-align: center;
+  transform: translateX(-10px);
+  animation: dropdown-beauty 0.3s ease-out;
+  animation-fill-mode: forwards;
+  transform-origin: top right;
+}
+
+@keyframes dropdown-beauty {
+  0%{
+    opacity: 0;
+    transform: rotate(-30deg) translateX(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg) translateX(2px);
+  }
+}
